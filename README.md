@@ -6,7 +6,7 @@
       
       
 
-                Informatika
+          Program Studi Informatika
     
     Fakultas Teknologi Informasi dan Sains Data
 
