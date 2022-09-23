@@ -6,11 +6,10 @@ public class DiskonMiniMarket {
         System.out.println("Total pembelian : ");
         
         // tambahkan code untuk menyimpan nominal total pembelian
-        int totalBeli = sc.nextInt();
+        double totalBeli = sc.nextDouble();
 
         // tambahkan code untuk mengimplementasikan ketentuan diskon yang ditetapkan
-        double diskon;
-        int hargaDiskon;
+        double diskon, hargaDiskon;
 
         if (totalBeli < 50000) {
             diskon = 0f;
@@ -24,10 +23,10 @@ public class DiskonMiniMarket {
 
         // tambahkan code untuk menampilkan nominal yang harus dibayar 
         // sesuai dengan ketentuan diskon yang diberikan
-        hargaDiskon = (int) (totalBeli - (totalBeli*diskon));
-        System.out.println("Total Pembelian      = Rp " + totalBeli);
+        hargaDiskon = totalBeli - (totalBeli*diskon);
+        System.out.printf("Total Pembelian      = Rp %.2f\n", totalBeli);
         System.out.println("Diskon Barang        = " + (int)(diskon*100) + "%");
-        System.out.println("Harga setelah diskon = Rp " + hargaDiskon);
+        System.out.printf("Harga setelah diskon = Rp %.2f\n", hargaDiskon);
 
         sc.close();
     }
