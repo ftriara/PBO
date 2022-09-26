@@ -9,8 +9,8 @@ public class ForLoopDemo {
         }*/
 
         //ForLoop Sesudah Perbaikan
-        for (int i = 0; i < 6; i++) {
-            System.out.println("elemen ke-" + i + " = " + arr[i]);
+        for (int i = 0; i < 5; i++) {
+            System.out.println("elemen ke-" + (i+1) + " = " + arr[i]);
         }
     }
 }
